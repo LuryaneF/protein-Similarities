@@ -1,1 +1,4 @@
 # protein-Similarities
+The automata1.cpp code takes a FASTA-aligned sequence, and turns it into an automaton. You can define in lines 167-170 how many lines the automaton has, the evolution rule and the automaton columns. For the columns, we will always do the size of the aligned protein times 8 (size of the amino acid binary code).
+To calculate the Hamming distances between the automata, all the automata resulting from the previous code must be in the same folder as the Phyton code, Distance.ipynb. Each  protein will be represented by its automaton corresponding to the automato-i.txt file. The Distance.ipynb program compares the automata by fixing an automaton i and comparing  it with the others and as a result we have column i of the similarity matrix.
+With the complete matrix we can build the dendrograms with the Dendrograms.R code. 
